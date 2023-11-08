@@ -1,0 +1,28 @@
+Создание временного сохранения stash
+
+
+git stash - команда для  сохранения незафиксированных изменений в Git.
+ Полезна, когда нужно переключиться на другую задачу.
+
+
+ git stash save "сообщение": Создать временное сохранение.
+
+Выполнить другую задачу.
+
+git stash apply: Восстановить сохраненные изменения.
+git stash list: Показать список сохранений.
+git stash drop stash@{n}: Удалить сохранение по индексу.
+git stash clear: Удалить все сохранения.
+git stash pop: Применить и удалить последнее сохранение.
+
+
+Ну или как запушить )
+
+
+echo "# midterm_second" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:manziro785/midterm_second.git
+git push -u origin main
